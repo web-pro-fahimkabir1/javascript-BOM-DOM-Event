@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Listeners Example</title>
+</head>
+
+<body>
+
+  <button id="myButton">Click me</button>
+  <input type="text" id="myInput" placeholder="Type something" />
+  <div id="display"></div>
+
+  <script>
+    const button = document.getElementById('myButton');
+    const input = document.getElementById('myInput');
+    const display = document.getElementById('display');
+
+    function handleClick() {
+      alert('Button was clicked!');
+    }
+
+    function handleInputChange() {
+      display.innerText = `Input value: ${input.value}`;
+    }
+
+    button.addEventListener('click', handleClick);
+    input.addEventListener('change', handleInputChange);
+  </script>
+</body>
+
+</html>
