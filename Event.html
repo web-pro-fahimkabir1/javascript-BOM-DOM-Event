@@ -8,7 +8,15 @@
 </head>
 
 <body>
-  git
+  <button id="demo" placeholder="Submit">Click</button>
+  <input type="submit" placeholder="Submit" id="demo">
 </body>
+<script>
+
+  let add = document.addEventListener("click", function () {
+    prompt("my name");
+  })
+  document.getElementById("demo").innerHTML = add;
+</script>
 
 </html>
